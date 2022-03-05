@@ -7,6 +7,6 @@ def timeit(func):
         func(*args, **kwargs)
         end = time.time()
         total = end - start
-        print(f"Total time: {total}")
+        print(f"Total time {total}")
 
     return wrapper
