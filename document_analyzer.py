@@ -18,7 +18,11 @@ with open("document.txt") as doc:
 
 # Get every word from the string into a list
 # Note: contractions will separate with this approach
-word_list = re.findall("\w+", lines)
+word_list = lines.split()
+
+if word_list == None:
+    print("File was empty.")
+    quit()
 
 # Iterate through list, assign unique values to dictionary, increment repeats
 word_dict = {}
