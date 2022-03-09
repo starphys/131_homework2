@@ -1,7 +1,7 @@
 import time
 
 
-def timeit(func):
+def calculate_time(func):
     def wrapper(*args, **kwargs):
         start = time.time()
         func(*args, **kwargs)
