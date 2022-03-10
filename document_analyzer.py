@@ -38,5 +38,6 @@ word_dict = lexographical_sort_dictionary(word_dict)
 
 top_words = list_top_values(word_dict, 5)
 
+print()
 for i in range(0, len(top_words)):
     print(top_words[i])
